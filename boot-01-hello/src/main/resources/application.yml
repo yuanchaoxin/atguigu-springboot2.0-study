@@ -4,3 +4,35 @@ server:
 spring:
   application:
     name: springboot-01-helloworld
+
+person:
+  userName: 'zhangsan /n 张三' #双引号会换行
+  password: "lisi /n 李四"    #单引号会当成字符串输出
+  boss: true
+  birth: 2021/06/30
+  age: 17
+  pet: {name: 阿猫,weight: 3.33}
+#  pet:
+#    name: 阿猫
+#    weight: 3.33
+#  interests: [篮球,足球]
+  interests:
+    - 篮球
+    - 足球
+  animal: [阿猫,阿狗]
+#  animal:
+#    - 阿猫
+#    - 阿狗
+  score: {"[数学]": 100,"[语文]": 100,k3: v3}  #中文键需注意
+  salary:
+    - 9999.99
+    - 9999.88
+  allPets:
+    health:
+      - name: 阿猫
+        weight: 3.33
+      - name: 阿狗
+        weight: 4.44
+    sick:  [{name: 阿鸡,weight: 2.22},{name: 阿鸭,weight: 2.22}]
+
+

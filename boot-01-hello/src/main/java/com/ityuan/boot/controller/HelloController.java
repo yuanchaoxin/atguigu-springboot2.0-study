@@ -1,5 +1,7 @@
 package com.ityuan.boot.controller;
 
+import com.ityuan.boot.bean.Person;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -14,8 +16,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
+    @Autowired
+    private Person person;
+
     @RequestMapping("/hello")
     public String hello() {
         return "Hello , Springboot2.0!";
+    }
+
+    @RequestMapping("/person")
+    public Person getPerson() {
+        return person;
     }
 }
