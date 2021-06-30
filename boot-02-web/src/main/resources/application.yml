@@ -1,0 +1,4 @@
+#spring.web.resources.static-locations=
+#spring.mvc.static-path-pattern=
+server:
+  port: 8081
